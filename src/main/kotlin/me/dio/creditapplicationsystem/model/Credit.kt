@@ -8,7 +8,7 @@ import java.util.UUID
 @Entity
 data class Credit(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long? = null,
+    var id: Long? = null,
     @Column(nullable = false, unique = true)
     val creditCode: UUID = UUID.randomUUID(),
     @Column(nullable = false)
